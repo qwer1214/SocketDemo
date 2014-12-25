@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button 
+        android:id="@+id/bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送信息"
+        android:onClick="send"
+        android:layout_centerVertical="true"/>
+    <EditText 
+        android:id="@+id/send_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="输入要发送的信息"
+        android:layout_above="@id/bt"/>
+	<TextView 
+	    android:id="@+id/recieve_info"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/bt"
+	    android:layout_centerHorizontal="true"/>
+</RelativeLayout>
